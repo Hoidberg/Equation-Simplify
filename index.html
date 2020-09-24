@@ -14,7 +14,7 @@
 	   <script>
 		   var element1 = document.createElement("input");
 		   element1.setAttribute("type", "number");
-		   element1.setAttribute("style", "width: 50px");
+		   element1.setAttribute("onkeypress", "this.style.width = ((this.value.length + 1) * 8) + 'px';");
 		   document.getElementById("main").appendChild(element1);
 	   </script>
    </body>
