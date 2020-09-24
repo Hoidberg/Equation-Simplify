@@ -21,6 +21,20 @@
         while (loop = true) {
             var str,
             element = document.getElementById("size")
+            var listener = {
+              aInternal: string,
+              aListener: function(val) {},
+              set a(val) {
+                this.aInternal = val;
+                this.aListener(val);
+              },
+              get a() {
+                return this.aInternal;
+              },
+              registerListener: function(listener) {
+                this.aListener = listener;
+              }
+            }
             if (element != null) {
                 str = element.value;
                 element.setAttribute("width", getTextWidth(str));
