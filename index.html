@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+   <head>
       <meta charset="utf-8">
-      
       <title>Equation Simplyifier</title>
-      
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Simplifys 3 number multiplication problems by converting them to a 2 number multiplication problem">
       <meta name="author" content="Hoidberg">
       <script>
-        var loop = true;
-        function getTextWidth(text, font) {
-            // re-use canvas object for better performance
-            var canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
-            var context = canvas.getContext("2d");
-            context.font = font;
-            var metrics = context.measureText(text);
-            return metrics.width;
-				}
-				var listener = {
-						aInternal: document.getElementById("size").value,
-						aListener: function(val) {},
-						set a(val) {
-								this.aInternal = val;
-								this.aListener(val);
-						},
-						get a() {
-								return this.aInternal;
-						},
-						registerListener: function(listener) {
-								this.aListener = listener;
-						}
-				}
-				listener.registerListener(function(val) {
-            var str,
-            element = document.getElementById("size")
-            if (element != null) {
-                str = element.value;
-                element.setAttribute("width", getTextWidth(str));
-            }
-            else {
-                str = null;
-            }
-				});
+         var loop = true;
+         function getTextWidth(text, font) {
+             // re-use canvas object for better performance
+             var canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
+             var context = canvas.getContext("2d");
+             context.font = font;
+             var metrics = context.measureText(text);
+             return metrics.width;
+         }
+         var listener = {
+		 aInternal: document.getElementById("size").value,
+		 aListener: function(val) {},
+		 set a(val) {
+			 this.aInternal = val;
+			 this.aListener(val);
+		 },
+		 get a() {
+			 return this.aInternal;
+		 },
+		 registerListener: function(listener) {
+			 this.aListener = listener;
+		 }
+         }
+         listener.registerListener(function(val) {
+             var str,
+             element = document.getElementById("size")
+             if (element != null) {
+                 str = element.value;
+                 element.setAttribute("width", getTextWidth(str));
+             }
+             else {
+                 str = null;
+             }
+         });
       </script>
-    </head>
-    <body>
-        <input type="number" id="size">
-    </body>
+   </head>
+   <body>
+      <input type="number" id="size">
+   </body>
 </html>
