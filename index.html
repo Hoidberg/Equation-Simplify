@@ -10,7 +10,7 @@
       <meta name="author" content="Hoidberg">
       <script>
         var text = document.getElementById("input-auto-size-text")
-        var width = (text.clientWidth + 1) + "px";
+        var width = (((text.clientWidth + 1) + "px").toString()).concat(px);
         text.setAttribute("width", width);
       </script>
     </head>
