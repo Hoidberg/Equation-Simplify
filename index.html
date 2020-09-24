@@ -10,12 +10,14 @@
    </head>
    <body>
 	   <div id="main">
-		   <input type="number" class="input">
+		   <input type="number" id="input1">
+		   <input type="number" id="input2">
 	   </div>
 	   <script>
 		   $(document).ready(function(){
-			   var input = $(".input") 
-			   console.log(input.value)
+			   var input1 = $("#input1")
+			   var input2 = $("#input2")
+			   console.log(input1.value * input2.value)
 		   });
 	   </script>
    </body>
