@@ -17,9 +17,11 @@
             var metrics = context.measureText(text);
             return metrics.width;
         }
-        var text = document.getElementById("input-auto-size-text")
-        var width = getTextWidth(text.InnerHTML)
-        text.setAttribute("width", width);
+        while true {
+            var text = document.getElementById("input-auto-size-text")
+            var width = getTextWidth(text.InnerHTML)
+            text.setAttribute("width", width);
+        }
       </script>
     </head>
     <body>
