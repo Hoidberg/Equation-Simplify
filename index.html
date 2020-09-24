@@ -9,6 +9,7 @@
       <meta name="description" content="Simplifys 3 number multiplication problems by converting them to a 2 number multiplication problem">
       <meta name="author" content="Hoidberg">
       <script>
+        var loop = true;
         function getTextWidth(text, font) {
             // re-use canvas object for better performance
             var canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
@@ -17,7 +18,7 @@
             var metrics = context.measureText(text);
             return metrics.width;
         }
-        while true {
+        while (loop = true) {
             var text = document.getElementById("input-auto-size-text")
             var width = getTextWidth(text.innerHTML)
             text.setAttribute("width", width);
