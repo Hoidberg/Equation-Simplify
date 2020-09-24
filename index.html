@@ -8,8 +8,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Simplifys 3 number multiplication problems by converting them to a 2 number multiplication problem">
       <meta name="author" content="Hoidberg">
+      <script>
+        var text = document.getElementById("input-auto-size-text")
+        var width = (text.clientWidth + 1) + "px";
+        text.setAttribute("width", width);
+      </script>
     </head>
     <body>
-      <input type="number">
+      <input type="number" id="input-auto-size-text">
     </body>
 </html>
