@@ -19,8 +19,15 @@
             return metrics.width;
         }
         while (loop = true) {
-            var width = getTextWidth(document.getElementById("size").value)
-            text.setAttribute("width", width);
+            var str,
+            element = document.getElementById("size")
+            if (element != null) {
+                str = element.value;
+                element.setAttribute("width", getTextWidth(str));
+            }
+            else {
+                str = null;
+            }
         }
       </script>
     </head>
