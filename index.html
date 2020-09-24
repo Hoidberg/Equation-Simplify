@@ -9,8 +9,16 @@
       <meta name="description" content="Simplifys 3 number multiplication problems by converting them to a 2 number multiplication problem">
       <meta name="author" content="Hoidberg">
       <script>
+        function getTextWidth(text, font) {
+            // re-use canvas object for better performance
+            var canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
+            var context = canvas.getContext("2d");
+            context.font = font;
+            var metrics = context.measureText(text);
+            return metrics.width;
+        }
         var text = document.getElementById("input-auto-size-text")
-        var width = (((text.clientWidth + 1) + "px").toString()).concat(px);
+        var width = getTextWidth(text.InnerHTML)
         text.setAttribute("width", width);
       </script>
     </head>
