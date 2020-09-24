@@ -19,13 +19,13 @@
             return metrics.width;
         }
         while (loop = true) {
-            var text = document.getElementById("input-auto-size-text")
+            var text = document.getElementById("size")
             var width = getTextWidth(text.innerHTML)
             text.setAttribute("width", width);
         }
       </script>
     </head>
     <body>
-      <input type="number" id="input-auto-size-text">
+      <input type="number" id="size">
     </body>
 </html>
