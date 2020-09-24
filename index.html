@@ -16,31 +16,12 @@
              var metrics = context.measureText(text);
              return metrics.width;
          }
-         var listener = {
-		 aInternal: document.getElementById("size").value,
-		 aListener: function(val) {},
-		 set a(val) {
-			 this.aInternal = val;
-			 this.aListener(val);
-		 },
-		 get a() {
-			 return this.aInternal;
-		 },
-		 registerListener: function(listener) {
-			 this.aListener = listener;
-		 }
-         }
-         listener.registerListener(function(val) {
+         while (document.getElementById("size").value != null) {
              var str,
              element = document.getElementById("size")
-             if (element != null) {
-                 str = element.value;
-                 element.setAttribute("width", getTextWidth(str));
-             }
-             else {
-                 str = null;
-             }
-         });
+             str = element.value;
+             element.setAttribute("width", getTextWidth(str));
+	 }
       </script>
    </head>
    <body>
