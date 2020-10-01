@@ -28,9 +28,11 @@
 		<button id="button1" class="w3-button w3-round-xxlarge" onclick="myFunction()">Simplify</button>
 		<p id="output"></p>
 		<script>
-			function myFunction() {
-			  document.getElementById("output").innerHTML = "test";
-			}
+			$(document).ready(function(){
+				$("#button1").click(function(){
+					$("#output").html("test");
+				});
+			});
 		</script>
 	</body>
 </html>
