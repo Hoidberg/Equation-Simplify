@@ -20,7 +20,7 @@
 			<tr>
 				<th><input id="input1" class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
 				<th><h2>&times;</h2></th>
-				<th><input id="input3" class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
+				<th><input id="input2" class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
 				<th><h2>&times;</h2></th>
 				<th><input id="input3" class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
 			</tr>
@@ -30,7 +30,8 @@
 		<script>
 			$(document).ready(function(){
 				$("#button1").click(function(){
-					$("#output").html("test");
+					var equation = (Number($("#input2").html()) + Number($("#input2").html())).toString();
+					$("#output").html(equation);
 				});
 			});
 		</script>
