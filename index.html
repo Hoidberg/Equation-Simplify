@@ -30,8 +30,8 @@
 		<script>
 			$(document).ready(function(){
 				$("#button1").click(function(){
-					var equation = Number($("#input2").val()) + Number($("#input3").val());
-					console.log(equation.toString());
+					var equation = Number($("#input2").val()) * Number($("#input3").val());
+					$("output").html(equation.toString());
 				});
 			});
 		</script>
