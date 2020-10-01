@@ -30,7 +30,7 @@
 		<script>
 			$(document).ready(function(){
 				$("#button1").click(function(){
-					var equation = $("#input2").val() + $("#input3").val();
+					var equation = Number($("#input2").val()) + Number($("#input3").val());
 					console.log(equation.toString());
 				});
 			});
