@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Equation Simplyifier</title> w3-panel w3-topbar w3-bottombar w3-border-red
+		<title>Equation Simplyifier</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Simplifys 3 number multiplication problems by converting them to a 2 number multiplication problem">
 		<meta name="author" content="Hoidberg">
@@ -10,6 +10,7 @@
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		
+		<!-- W3.CSS -->
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
@@ -17,12 +18,21 @@
 	<body class="w3-container w3-flat-midnight-blue">
 		<table align="center">
 			<tr>
-				<th><input class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
+				<th><input id="input1" class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
 				<th><h2>&times;</h2></th>
-				<th><input class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
+				<th><input id="input3" class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
 				<th><h2>&times;</h2></th>
-				<th><input class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
+				<th><input id="input3" class="w3-input w3-round-large w3-metro-blue w3-topbar w3-bottombar w3-border-black w3-rightbar w3-leftbar" type="number" style="width: 107.5px; height: 38px;"></th>
 			</tr>
 		</table>
+		<button id="button1" class="w3-button w3-round-xxlarge">Simplify</button>
+		<p id="output"></p>
+		<script>
+			$(document).ready(function(){
+				$("#button1").click(function(){
+					$("#output").html("hi");
+				});
+			});
+		</scriot>
 	</body>
 </html>
