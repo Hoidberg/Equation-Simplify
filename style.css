@@ -1,0 +1,8 @@
+:not(input) {
+	font-family: 'Roboto', sans-serif;
+}
+input {
+	width: 107.5px;
+	height: 38px;
+	font-family: 'Open Sans', sans-serif;
+}
